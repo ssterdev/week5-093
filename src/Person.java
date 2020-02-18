@@ -16,8 +16,9 @@ public class Person {
         // Calendar.getInstance().get(Calendar.DATE);
         // Calendar.getInstance().get(Calendar.MONTH) + 1; // January is 0 so we add one
         // Calendar.getInstance().get(Calendar.YEAR);
-        return 0;
-    }
+        MyDate test = new MyDate(Calendar.getInstance().get(Calendar.DATE),Calendar.getInstance().get(Calendar.MONTH),Calendar.getInstance().get(Calendar.YEAR));
+	    return birthday.differenceInYears(test);
+   }
     
     public boolean olderThan(Person compared) {
         // compare the ages based on birthdays
